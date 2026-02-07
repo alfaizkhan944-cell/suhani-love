@@ -1,1 +1,60 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Suhani ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+margin:0;
+height:100vh;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:Arial, sans-serif;
+overflow:hidden;
+color:white;
+text-align:center;
+}
+.card{
+background:rgba(255,255,255,0.15);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+width:90%;
+max-width:400px;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+h1{font-size:2rem;margin-bottom:10px;}
+p{font-size:1.1rem;line-height:1.6;}
+button{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:25px;
+background:#ff3b6f;
+color:white;
+font-size:1rem;
+cursor:pointer;
+}
+.heart{
+position:absolute;
+width:15px;
+height:15px;
+background:red;
+transform:rotate(45deg);
+animation:float 6s linear infinite;
+}
+.heart:before,.heart:after{
+content:'';
+width:15px;
+height:15px;
+background:red;
+border-radius:50%;
+position:absolute;
+}
+.heart:before{left:-7px;}
+.heart:after{top:-7px;}
+@keyframes float{
+0%{bottom:-10%;opacity:1;
